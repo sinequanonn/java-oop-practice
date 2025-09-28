@@ -81,4 +81,15 @@ class ValPageTest {
         });
     }
 
+    @Test
+    void 페이지_범위_1_400_사이_검증() {
+        //given
+        ValPage valPage = new ValPage();
+        List<Integer> page = Arrays.asList(-1, 101);
+
+        // when, then
+        assertThatThrownBy(() -> valPage.validate(page))
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessageContaining("[ERROR] 페이지의 범위는 1~400이어야 합니다.");
+    }
 }
