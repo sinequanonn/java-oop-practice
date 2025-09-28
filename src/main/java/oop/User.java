@@ -5,17 +5,11 @@ import java.util.List;
 public class User {
     private String name;
     private List<Integer> page;
-    private CalPage calPage;
+    private CalPage calPage = new CalPage();
 
     public User(String name, List<Integer> page) {
         this.name = name;
         this.page = page;
-    }
-
-    public User(String name, List<Integer> page, CalPage calPage) {
-        this.name = name;
-        this.page = page;
-        this.calPage = calPage;
     }
 
     public int checkNumber() {
