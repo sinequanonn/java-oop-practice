@@ -1,4 +1,4 @@
-package oop;
+package oop.practice1;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;

@@ -1,4 +1,4 @@
-package oop;
+package oop.practice1;
 
 import java.util.Arrays;
 
