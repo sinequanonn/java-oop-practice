@@ -14,9 +14,9 @@ public class UserTest {
         CalPage calPage = new CalPage();
 
         // when
-        int result = user.checkNumber(calPage);
+        user.checkNumber(calPage);
 
         // then
-        Assertions.assertThat(result).isEqualTo(72);
+        Assertions.assertThat(user.getResult()).isEqualTo(72);
     }
 }
