@@ -9,10 +9,6 @@ public class EvalResult {
         if (crong > pobi) {
             return 2;
         }
-        if (pobi == crong) {
-            return 0;
-        }
-
-        return -1;
+        return 0;
     }
 }
