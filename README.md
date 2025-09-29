@@ -59,3 +59,4 @@ pobi crong result
 - [x] `User`의 `checkNumber` 메서드 로직 수정
   - 인자 넘기기 또는 반환 받기 둘 중 한 개만 가능하도록 하기
   - 메서드에 result 속성 추가
+- [x] 예외 처리 발생 시 -1 출력
