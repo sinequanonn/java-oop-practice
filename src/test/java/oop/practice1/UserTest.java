@@ -11,11 +11,12 @@ public class UserTest {
     void 페이지_각_자릿수의_합과_곱_중에서_큰_값을_가짐() {
         // given
         User user = new User("pobi", Arrays.asList(97, 98));
+        CalPage calPage = new CalPage();
 
         // when
-        int result = user.checkNumber();
+        user.checkNumber(calPage);
 
         // then
-        Assertions.assertThat(result).isEqualTo(72);
+        Assertions.assertThat(user.getResult()).isEqualTo(72);
     }
 }
