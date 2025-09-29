@@ -52,3 +52,9 @@ pobi crong result
     - crong 승리 시: 2
     - 무승부: 0
     - 예외사항: -1
+
+### 리팩토링 대상 확인
+- [x] `User`와 `CalPage`의 강한 의존성
+  - CalPage 객체를 User의 checkNumber 메서드의 인자로 받으면서 결합도 느슨하게 변경
+- [ ] `User`의 `checkNumber₩ 메서드 로직 수정
+  - 인자 넘기기 또는 반환 받기 둘 중 한 개만 가능하도록 하기
