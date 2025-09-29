@@ -18,10 +18,10 @@ public class Application {
         User pobi = new User("pobi", pobi_page);
         User crong = new User("crong", crong_page);
 
-        int pobi_result = pobi.checkNumber(calPage);
-        int crong_result = crong.checkNumber(calPage);
+        pobi.checkNumber(calPage);
+        crong.checkNumber(calPage);
 
-        int result = evalResult.checkResult(pobi_result, crong_result);
+        int result = evalResult.checkResult(pobi.getResult(), crong.getResult());
         System.out.println(result);
     }
 
